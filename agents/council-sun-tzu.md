@@ -13,6 +13,7 @@ council:
   duo_keywords: ["strategy", "competition", "market"]
   profiles: ["classic", "exploration-orthogonal", "execution-lean"]
   provider_affinity: ["anthropic", "google"]
+  reasoning_method: adversarial-simulation
 ---
 
 ## Identity

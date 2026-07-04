@@ -13,6 +13,7 @@ council:
   duo_keywords: ["systems", "feedback", "complexity", "loops"]
   profiles: ["classic", "exploration-orthogonal"]
   provider_affinity: ["anthropic", "google"]
+  reasoning_method: causal-loop-mapping
 ---
 
 ## Identity

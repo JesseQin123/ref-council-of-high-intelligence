@@ -161,6 +161,8 @@ For each round, dispatch a new `invoke_agent` call to `generalist`. Since `invok
 
 Rationale: Choi et al. (arXiv:2510.07517), Free-MAD (arXiv:2509.11035), controlled-study arXiv:2511.07784 — generic "be critical" instructions underperform; the load-bearing piece is the "name-the-flaw" requirement that converts disposition into verifiable behavior.
 
+Round 1 prompts must instruct each member to reason via the reasoning_method field in their frontmatter (DMAD, arXiv:2410.12853) — method diversity, not just persona diversity.
+
 Full mode:
 
 1. Round 1: Independent analysis, blind-first, max 300 words/member.

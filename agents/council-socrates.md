@@ -13,6 +13,7 @@ council:
   duo_keywords: ["framing", "purpose", "meaning"]
   profiles: ["classic", "exploration-orthogonal"]
   provider_affinity: ["anthropic"]
+  reasoning_method: elenchic-questioning
 ---
 
 ## Identity

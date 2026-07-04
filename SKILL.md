@@ -204,6 +204,8 @@ Follow these steps in order. Do NOT skip steps or merge rounds.
 
 **Designate the domain-weight seat (do this NOW, before any analysis).** Identify the single member whose domain most directly matches the problem — this member receives a **1.5× weight** at tie-breaking (STEP 6). Lock it here, at panel selection, *before* any positions exist. Selecting the heavyweight after seeing votes would let the coordinator nudge the outcome; selecting it up front keeps tie-breaking honest. If two members are equally on-domain, pick neither — record "no domain-weight seat (ambiguous match)" and tie-break on equal weights.
 
+**Method diversity (DMAD, arXiv:2410.12853).** Every member carries a distinct `reasoning_method` in its frontmatter `council:` block — an explicit reasoning method, not just a persona. When substituting or swapping members (fallbacks, `--members` overrides, seat changes), the coordinator must preserve method diversity: never assemble a panel where two seats share the same `reasoning_method`.
+
 `[CHECKPOINT]` State the selected members, mode, and the designated domain-weight seat (member + 1.5× + one-line rationale, or "none — ambiguous match") before proceeding.
 
 ### STEP 1: Provider Detection and Model Routing
@@ -392,6 +394,7 @@ The problem under deliberation:
 Here is how each member reframed the problem:
 {all restatements from Step 1.5}
 
+Reason via your designated method: {reasoning_method from your frontmatter}. Do not imitate other members' methods — method diversity is the point (DMAD, arXiv:2410.12853).
 Produce your independent analysis using your Output Format (Standalone).
 Do NOT try to anticipate what other members will say.
 Limit: 400 words maximum.

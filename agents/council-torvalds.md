@@ -13,6 +13,7 @@ council:
   duo_keywords: ["shipping", "execution", "release", "engineering", "theory", "pragmatism"]
   profiles: ["classic", "exploration-orthogonal", "execution-lean"]
   provider_affinity: ["openai", "anthropic"]
+  reasoning_method: empirical-reduction-to-practice
 ---
 
 ## Identity

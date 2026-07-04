@@ -13,6 +13,7 @@ council:
   duo_keywords: ["ai", "ml", "neural", "model", "training"]
   profiles: ["classic", "exploration-orthogonal"]
   provider_affinity: ["openai", "anthropic"]
+  reasoning_method: gradient-empiricism
 ---
 
 ## Identity

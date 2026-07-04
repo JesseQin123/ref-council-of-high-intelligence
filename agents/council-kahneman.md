@@ -13,6 +13,7 @@ council:
   duo_keywords: ["decision", "bias", "thinking", "judgment"]
   profiles: ["classic", "exploration-orthogonal"]
   provider_affinity: ["anthropic"]
+  reasoning_method: bias-audit-system2
 ---
 
 ## Identity

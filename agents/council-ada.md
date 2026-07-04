@@ -13,6 +13,7 @@ council:
   duo_keywords: ["formalization", "systems", "abstraction"]
   profiles: ["classic", "exploration-orthogonal", "execution-lean"]
   provider_affinity: ["openai", "anthropic"]
+  reasoning_method: formal-stepwise-verification
 ---
 
 ## Identity

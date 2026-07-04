@@ -13,6 +13,7 @@ council:
   duo_keywords: ["shipping", "execution", "release"]
   profiles: ["classic"]
   provider_affinity: ["anthropic", "openai", "google"]
+  reasoning_method: timing-tempo-analysis
 ---
 
 ## Identity

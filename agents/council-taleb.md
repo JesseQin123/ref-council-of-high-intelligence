@@ -13,6 +13,7 @@ council:
   duo_keywords: ["risk", "uncertainty", "fragility", "tail"]
   profiles: ["classic"]
   provider_affinity: ["anthropic", "openai", "google"]
+  reasoning_method: tail-stress-testing
 ---
 
 ## Identity
