@@ -1,7 +1,7 @@
 {
   "name": "council",
   "displayName": "Council of High Intelligence",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "18 AI personas deliberate your hardest decisions — structured multi-round deliberation (blind analysis, anonymized cross-examination, weighted verdict) with genuine model diversity across providers.",
   "author": {
     "name": "0xNyk",

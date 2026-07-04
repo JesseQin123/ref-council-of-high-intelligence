@@ -11,9 +11,10 @@
 <p align="center">
   <a href="https://github.com/0xNyk/council-of-high-intelligence/releases"><img src="https://img.shields.io/github/v/release/0xNyk/council-of-high-intelligence" alt="Release"></a>
   <a href="https://github.com/0xNyk/council-of-high-intelligence/stargazers"><img src="https://img.shields.io/github/stars/0xNyk/council-of-high-intelligence" alt="Stars"></a>
-  <a href="https://creativecommons.org/publicdomain/zero/1.0/"><img src="https://img.shields.io/badge/license-CC0-blue" alt="License"></a>
-  <img src="https://img.shields.io/badge/Claude_Code-skill-blueviolet" alt="Claude Code Skill">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="License"></a>
+  <img src="https://img.shields.io/badge/Claude_Code-plugin-blueviolet" alt="Claude Code Plugin">
   <img src="https://img.shields.io/badge/Codex-skill-black" alt="Codex Skill">
+  <img src="https://img.shields.io/badge/Gemini_CLI-extension-4285F4" alt="Gemini CLI Extension">
   <img src="https://img.shields.io/badge/members-18-orange" alt="18 Members">
 </p>
 
@@ -35,7 +36,14 @@
 
 ## Quickstart
 
-### Claude Code
+### Claude Code (plugin — recommended)
+
+```text
+/plugin marketplace add 0xNyk/council-of-high-intelligence
+/plugin install council@council-of-high-intelligence
+```
+
+Or via installer:
 
 ```bash
 git clone https://github.com/0xNyk/council-of-high-intelligence.git
@@ -59,13 +67,15 @@ cd council-of-high-intelligence
 ./install.sh --codex
 ```
 
-Then in Codex:
+### Gemini CLI
 
+```bash
+git clone https://github.com/0xNyk/council-of-high-intelligence.git
+cd council-of-high-intelligence
+./install.sh --gemini
 ```
-/council Should we open-source our agent framework?
-/council --quick Should we add caching here?
-/council --duo Should we use microservices or monolith?
-```
+
+The same `/council` commands work in all three hosts.
 
 ## Why This Works
 

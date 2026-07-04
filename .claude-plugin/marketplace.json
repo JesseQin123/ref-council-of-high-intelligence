@@ -10,7 +10,7 @@
       "name": "council",
       "source": "./",
       "description": "18 AI personas deliberate your hardest decisions — structured multi-round deliberation with genuine model diversity. One command: /council",
-      "version": "1.1.0"
+      "version": "1.2.0"
     }
   ]
 }
