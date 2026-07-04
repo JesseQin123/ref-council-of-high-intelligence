@@ -13,6 +13,7 @@ council:
   duo_keywords: ["ai-safety", "alignment", "risk"]
   profiles: ["classic", "exploration-orthogonal"]
   provider_affinity: ["anthropic", "openai", "google"]
+  reasoning_method: scaling-extrapolation
 ---
 
 ## Identity

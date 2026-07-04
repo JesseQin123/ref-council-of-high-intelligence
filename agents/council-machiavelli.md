@@ -13,6 +13,7 @@ council:
   duo_keywords: ["formalization", "systems", "abstraction"]
   profiles: ["classic", "exploration-orthogonal"]
   provider_affinity: ["anthropic", "google"]
+  reasoning_method: incentive-backward-induction
 ---
 
 ## Identity

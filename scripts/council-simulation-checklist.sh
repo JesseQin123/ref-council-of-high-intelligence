@@ -261,6 +261,18 @@ else
   warn "Only ${affinity_count}/${agent_count} agents have provider_affinity"
 fi
 
+reasoning_method_count=0
+for agent_file in agents/council-*.md; do
+  if grep -q "reasoning_method" "$agent_file" 2>/dev/null; then
+    ((reasoning_method_count+=1))
+  fi
+done
+if [[ "$reasoning_method_count" -eq "$agent_count" ]]; then
+  pass "All agents have reasoning_method in frontmatter"
+else
+  warn "Only ${reasoning_method_count}/${agent_count} agents have reasoning_method"
+fi
+
 # --- Install script checks ---
 
 if command -v shellcheck >/dev/null 2>&1; then

@@ -13,6 +13,7 @@ council:
   duo_keywords: ["strategy", "competition", "market"]
   profiles: ["classic", "exploration-orthogonal", "execution-lean"]
   provider_affinity: ["anthropic"]
+  reasoning_method: negative-visualization
 ---
 
 ## Identity

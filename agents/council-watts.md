@@ -13,6 +13,7 @@ council:
   duo_keywords: ["framing", "purpose", "meaning", "engineering", "theory", "pragmatism"]
   profiles: ["classic"]
   provider_affinity: ["anthropic"]
+  reasoning_method: frame-dissolution
 ---
 
 ## Identity

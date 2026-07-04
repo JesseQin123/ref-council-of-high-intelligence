@@ -79,6 +79,8 @@ If neither exists, stop and tell the user to run `./install.sh --codex`.
 
 ### Step 2: Parse Request
 
+Project overrides: if `./.council.yaml` exists in the working directory, treat its keys (`profile`, `triad`, `members`, `chairman`, `models`, `no_auto_route`) as default flag values. Explicit flags always win.
+
 Extract:
 
 - Mode: `full` (default), `quick`, or `duo`
@@ -167,6 +169,8 @@ Keep the same spawned agents for all rounds via `send_input`.
 
 Rationale: Choi et al. (arXiv:2510.07517), Free-MAD (arXiv:2509.11035), controlled-study arXiv:2511.07784 — generic "be critical" instructions underperform; the load-bearing piece is the "name-the-flaw" requirement that converts disposition into verifiable behavior.
 
+Round 1 prompts must instruct each member to reason via the reasoning_method field in their frontmatter (DMAD, arXiv:2410.12853) — method diversity, not just persona diversity.
+
 Full mode:
 
 1. Round 1: Independent analysis, blind-first, max 300 words/member.
@@ -190,7 +194,7 @@ Structured stance & weighted tie-breaking (full + quick modes):
 
 1. **Designate the domain-weight seat at panel selection** (before any analysis): the single member whose domain most directly matches the problem carries **1.5×** weight; all others **1.0×**. Lock it up front — selecting it after seeing positions would let the coordinator nudge the outcome. If the match is ambiguous, designate none and tie-break on equal weights.
 2. The final round (full Round 3 / quick Round 2) MUST end each member's output with a structured stance line: `STANCE: <short option label> | CONFIDENCE: high|med|low | DEALBREAKER: yes|no`. Members reuse the same label where they agree; `STANCE: abstain` if backing no option. Re-prompt for a missing/unparseable line — never infer stance from prose.
-3. Tally weighted votes per canonical option. Consensus iff `W_option ≥ (2/3) × W_total`, where `W_total` includes abstainers' weight (abstention raises the bar). Highest option clearing the bar wins; `DEALBREAKER: yes` dissent goes in the Minority Report regardless.
+3. Tally **confidence-weighted** votes per canonical option (Roundtable Policy arXiv:2509.16839; ConfMAD arXiv:2509.14034): vote weight = base weight (1.0, or 1.5 for the domain seat) × confidence factor (`high → 1.0`, `med → 0.75`, `low → 0.5`). Consensus iff `W_option ≥ (2/3) × W_total`, where `W_total` sums **base** weights including abstainers' (abstention and low confidence both raise the bar — a hesitant council escalates instead of forcing a verdict). Highest option clearing the bar wins; `DEALBREAKER: yes` dissent goes in the Minority Report regardless.
 4. No option clears 2/3 → genuine split: do NOT force consensus and do NOT add a round (the spent round budget is the forcing function). Present each option with its weighted tally to the user. Record the tally (`option → weight`, marking the 1.5× seat) in the verdict's Vote Tally field. Duo mode issues no tally — it is dialectic, not decision-issuing.
 
 Round execution reliability policy:

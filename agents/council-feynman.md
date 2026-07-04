@@ -13,6 +13,7 @@ council:
   duo_keywords: ["decision", "bias", "thinking", "judgment"]
   profiles: ["classic", "exploration-orthogonal", "execution-lean"]
   provider_affinity: ["openai", "anthropic"]
+  reasoning_method: first-principles-reconstruction
 ---
 
 ## Identity

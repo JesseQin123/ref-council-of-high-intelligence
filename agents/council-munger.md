@@ -13,6 +13,7 @@ council:
   duo_keywords: ["economics", "investment", "models", "moat"]
   profiles: ["classic"]
   provider_affinity: ["anthropic", "google"]
+  reasoning_method: multi-model-inversion
 ---
 
 ## Identity

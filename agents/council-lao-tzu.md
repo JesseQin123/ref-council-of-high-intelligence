@@ -13,6 +13,7 @@ council:
   duo_keywords: ["architecture", "structure", "categories"]
   profiles: ["classic", "exploration-orthogonal"]
   provider_affinity: ["anthropic"]
+  reasoning_method: via-negativa
 ---
 
 ## Identity

@@ -13,6 +13,7 @@ council:
   duo_keywords: ["design", "user", "usability", "ux"]
   profiles: ["classic"]
   provider_affinity: ["openai", "anthropic"]
+  reasoning_method: subtractive-essentialism
 ---
 
 ## Identity
